@@ -1,0 +1,138 @@
+* {
+    transition: all .1s ease-in;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    width: 100%;
+    background-color: rgb(58, 58, 250);
+}
+
+#page {
+    margin: 2% 2%;
+    background-color: rgb(77, 118, 253);
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2 {
+    padding-bottom: 5%;
+    font-size: 20px;
+}
+
+p {
+    opacity: 0.5;
+}
+
+#footer {
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#main {
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ol {
+    list-style: none;
+    font-size: 0;
+}
+
+li {
+    text-align: center;
+    padding: 2% 2%;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+    cursor: pointer;
+}
+
+#Lisbon {
+    width: 48%;
+    background-color: rgb(77, 118, 253);
+    margin-bottom: 0;
+}
+
+#Paris {
+    width: 25%;
+    background-color: rgb(64, 196, 206);
+    margin-left: 0.5%;
+    margin-bottom: 0;
+}
+
+#Belgrade {
+    width: 25%;
+    background-color: rgb(188, 77, 253);
+    margin-left: 0.5%;
+    margin-bottom: 0;
+}
+
+#Kyiv {
+    width: 23.75%;
+    background-color: rgb(253, 77, 77);
+    margin-bottom: 0;
+}
+
+#Tel-Aviv {
+    width: 23.75%;
+    background-color: rgb(253, 141, 77);
+    margin-left: 0.5%;
+    margin-bottom: 0;
+}
+
+#Cair {
+    width: 25%;
+    background-color: rgb(165, 155, 46);
+    margin-left: 0.5%;
+    margin-bottom: 0;
+}
+
+#New-York {
+    width: 25%;
+    background-color: rgb(64, 207, 112);
+    margin-left: 0.5%;
+    margin-bottom: 0;
+}
+
+#New-Delhi {
+    width: 23.75%;
+    background-color: rgb(47, 137, 153);
+    margin-bottom: 0;
+}
+
+#San-Francisco {
+    width: 49.25%;
+    background-color: rgb(238, 77, 253);
+    margin-left: 0.5%;
+    margin-bottom: 0; 
+}
+
+#Tokyo {
+    width: 25%;
+    background-color: rgb(37, 190, 88);
+    margin-left: 0.5%;
+    margin-bottom: 0;
+}
+
+#Sydney {
+    width: 99%;
+    background-color: rgb(23, 92, 148);
+}
+
+ol:hover li:not(:hover) {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+}

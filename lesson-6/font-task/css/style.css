@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'MyFonts';
+   
+    src: url(../fonts/Lato-Light.ttf);
+   
+}
+
+*{transition: all .1s ease-in;}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    margin: 2.5% 6.5%;
+    margin-bottom: 1%;
+    padding: 4% 5%;
+    background-color: rgba(207, 197, 197, 0.842);
+}
+
+h1 {
+    font-size: 42px;
+    font-family: Cambria, Cochin, 
+    Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 2%;
+    font-size: 19px;
+    font-family: 'MyFonts';
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    color: rgba(247, 144, 26);
+}
+
+p:first-of-type:first-letter {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 110px;
+    margin: 0 0;
+    margin-right: 10px; 
+    float:left;
+}
+
+button {
+    background-color: rgba(207, 197, 197, 0.842);
+    margin-top: 2.5%;
+    color: rgba(247, 144, 26);
+    border: 3px solid rgba(247, 144, 26);
+    padding: 2% 2%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'MyFonts';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border: 3px solid rgba(247, 144, 26);
+    background-color: rgba(134, 240, 48, 0.842);
+}
