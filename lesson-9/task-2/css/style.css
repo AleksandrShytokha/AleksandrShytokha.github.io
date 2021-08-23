@@ -1,0 +1,186 @@
+* {
+    transition: all .1s ease-in;
+}
+
+@font-face {
+    font-family: 'MyFonts-MuseoReg';
+    src: url(../fonts/MuseoModerno-Regular.ttf);
+}
+
+body {
+    background-color: #c1c1c5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.img-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*Main-block*/
+.main-block {
+    position: absolute;
+    top: 30%;
+    left: 26%;
+    margin: -125px 0 0 -125px;
+    width: 1000px;
+    height: 550px;
+    background-color: #111a28;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main-block__nike-logo {
+    width: 25%;
+    height: 20%;
+}
+
+.item-nike {
+    margin-left: 30px;
+}
+
+/*Main-block-colors-picker*/
+.main-block__color-picker {
+    position: relative;
+    margin: -20px 0 0 270px;
+    width: 180px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors-picker{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.colors-picker--default {
+    background-color: black;
+}
+
+.colors-picker--wheat {
+    background-color: rgb(255,255,255);
+}
+
+.colors-picker--red {
+    background-color: red;
+}
+
+.colors-picker--turquoise {
+    background-color: turquoise;
+}
+
+.colors-picker:hover {
+    cursor: pointer;
+    border: 3px solid rgba(29, 74, 172, 0.8);
+    transform: scale(1.3);
+}
+
+/*Right-block*/
+.right-block {
+    position: relative;
+    width: 280px;
+    height: 300px;
+    margin: 110px 0 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'MyFonts-MuseoReg';
+}
+
+.title {
+    color: rgb(255,255,255);
+}
+
+/*Right-block-title*/
+.title__h1 {
+    width: 250px;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title__p {
+    font-size: 16px;
+    opacity: 0.6;
+}
+
+/*Right-block-Rating*/
+.right-block__rating {
+	overflow: hidden;
+	width: 265px;
+	margin: 0 0;
+    padding-right: 150px;
+}
+.right-block__rating:not(:checked) > input {
+	display: none;
+}
+.right-block__rating:not(:checked) > label {
+	float: right;
+	width: 22px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 22px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.right-block__rating:not(:checked) > label:before {
+	content: '★';
+}
+.right-block__rating > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.right-block__rating:not(:checked) > label:hover,
+.right-block__rating:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.right-block__rating > input:checked + label:hover,
+.right-block__rating > input:checked + label:hover ~ label,
+.right-block__rating > input:checked ~ label:hover,
+.right-block__rating > input:checked ~ label:hover ~ label,
+.right-block__rating > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.right-block__rating > label:active {
+	position: relative;
+}
+
+/*Right-block-choose*/
+.selection__choose {
+    width: 70px;
+    height: 33px;
+    padding: 0px 7px;
+    color: #e1e1e1;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    background: transparent;
+}
+
+option {
+    color: #000000;
+    font-size: 16px;
+}
+
+/*Right-block-add*/
+.add-button {
+    width: 185px;
+    height: 41px;
+    font-size: 16px;
+    background-color: rgb(32, 40, 53, 0.4);
+    border: 1px solid #e1e1e1;
+    color: #696e76;
+}
+
+.add-button:hover {
+    background-color: rgba(32, 40, 53, 1);
+}

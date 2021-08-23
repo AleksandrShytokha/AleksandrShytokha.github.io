@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/discharge.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson-9/Task#2</title>
+</head>
+
+<!--just-for-flex-direction изначально не было, потом все поехало
+и чтобы нормально разместить елменты добавил этот див-->
+
+<body>
+    <img class="img-background" src="img/background_02.png" alt="chiki briki">
+    <img class="img-background" src="img/background_01.png" alt="chiki briki">
+    <div class="main-block">
+        <div class="just-for-flex-direction">
+            <img src="img/nike_logo.png" alt="chiki briki" class="main-block__nike-logo">
+            <div class="main-block__item-block">
+                <img src="img/Nike_SB_Stefan.png" alt="chiki briki" class="item-nike">
+
+            </div>
+            <div class="main-block__color-picker">
+                <div class="colors-picker colors-picker--default"></div>
+                <div class="colors-picker colors-picker--wheat"></div>
+                <div class="colors-picker colors-picker--red"></div>
+                <div class="colors-picker colors-picker--turquoise"></div>
+            </div>
+        </div>
+        <div class="main-block__right-block right-block">
+            <div class="right-block__title title">
+                <h1 class="title__h1">
+                    Nike SB Stefan Janoski Max
+                </h1>
+                <p class="title__p">
+                    Unisex Skateboarding Shoe
+                </p>
+            </div>
+            <div class="right-block__rating">
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5" title="Оценка «5»"></label>
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-1" name="rating" value="1">
+                <label for="star-1" title="Оценка «1»"></label>
+            </div>
+            <div class="right-block__choose selection">
+                <span>
+                    <select class="selection__choose">
+                        <option hidden disabled selected>Size</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </span>
+                <span>
+                    <select class="selection__choose">
+                        <option hidden disabled selected>Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </span>
+            </div>
+            <div class="right-block__add">
+                <button type="submit" class="add-button" onclick="window.open('/index.html', 'blank')">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
