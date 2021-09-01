@@ -1,0 +1,85 @@
+* {
+    transition: all .1s ease-in;
+}
+
+@font-face {
+    font-family: 'MyFontsRaleway-Bold';
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+body {
+    background-color: #70bfff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.main-flex-container {
+    width: 1030px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    margin: -125px 0 0 -125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-block {
+    width: 401px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-block__item {
+    display: flex;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+.button-left {
+    width: 300px;
+    height: 101px;
+    font-size: 20px;
+    font-family: 'MyFontsRaleway-Bold';
+    background-color: rgb(255, 255, 255);
+}
+
+.button-right {
+    width: 101px;
+    height: 101px;
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid #cccc;
+}
+
+.right-block__image {
+    position: absolute;
+    margin-top: 15px;
+    width: 400px;
+    height: 400px;
+}
+
+.main-flex-container__title {
+    position: relative;
+    padding-top: 210px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-family: 'MyFontsRaleway-Bold';
+}
+
+.button-left:hover {
+    color: rgb(37, 202, 37);
+}
+
+.button-right:hover {
+    color: rgb(37, 202, 37);
+}
+
+.button-left:hover + .button-right {
+    color: rgb(37, 202, 37);
+}
